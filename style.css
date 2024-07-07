@@ -1,0 +1,101 @@
+:root {
+  --c-main: #fd910d;
+  --c-light: #bbecee;
+  --f-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --c-body: #666;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--f-base);
+}
+h1 {
+  color: var(--c-main);
+  font-family: var(--f-base);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--c-light);
+}
+.container {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 30px;
+}
+.container * {
+  outline: none;
+  border: none;
+}
+.container .inputs-wrapper {
+  background-color: var(--c-light);
+  padding: 30px 25px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+.inputs-wrapper input,
+.inputs-wrapper button {
+  background: var(--c-body);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  height: 50px;
+}
+.inputs-wrapper input {
+  width: 60%;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.inputs-wrapper button {
+  width: 30%;
+  float: right;
+  padding: 0 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--c-body);
+  font-size: larger;
+  font-weight: bold;
+  border: 2px solid;
+  transition: 1.4s background-color;
+}
+.output {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.output div {
+  width: 100px;
+  height: 100px;
+  color: var(--c-main);
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: 20px 0;
+}
+
+.output div span {
+  font-size: 30px;
+  font-weight: 800;
+}
+.output div p {
+  font-size: 14px;
+  color: var(--c-body);
+  font-weight: 600;
+}
+
+/*this is what happens when we hover our button at blog*/
+button:hover {
+  background-color: var(--c-main);
+  color: rgb(248, 243, 243);
+}
